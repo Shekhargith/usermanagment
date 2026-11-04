@@ -1,0 +1,77 @@
+<div class="login-container">
+
+  <div class="login-card">
+
+    <div class="brand">
+      <div class="brand-icon">UM</div>
+      <h2>UserManagement</h2>
+      <p>Welcome back! Please login to your account.</p>
+    </div>
+
+    <form (ngSubmit)="login()">
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+
+        <div class="password-wrapper">
+          <input
+            [type]="showPassword ? 'text' : 'password'"
+            name="password"
+            [(ngModel)]="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <button
+            type="button"
+            class="toggle-password"
+            (click)="showPassword = !showPassword">
+            {{ showPassword ? 'Hide' : 'Show' }}
+          </button>
+        </div>
+      </div>
+
+      <div class="form-options">
+
+        <label class="remember">
+          <input
+            type="checkbox"
+            name="rememberMe"
+            [(ngModel)]="rememberMe"
+          />
+          Remember me
+        </label>
+
+        <a href="#">Forgot Password?</a>
+
+      </div>
+
+      <button type="submit" class="login-btn">
+        Sign In
+      </button>
+
+    </form>
+
+    <div class="register-link">
+  Don't have an account?
+  <a routerLink="/register">Create Account</a>
+</div>
+
+    <div class="footer">
+      © 2026 UserManagement. All rights reserved.
+    </div>
+
+  </div>
+
+</div>

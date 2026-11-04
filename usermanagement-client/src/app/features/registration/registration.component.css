@@ -1,0 +1,160 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.registration-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e8efff, #f5f7ff);
+  font-family: Arial, sans-serif;
+  padding: 30px 15px;
+}
+
+.registration-card {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  padding: 35px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.brand-icon {
+  width: 55px;
+  height: 55px;
+  margin: auto auto 12px;
+  background: #315bea;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.brand h2 {
+  color: #202b45;
+  margin-bottom: 8px;
+}
+
+.brand p {
+  color: #8490a5;
+  font-size: 13px;
+}
+
+.form-group {
+  margin-bottom: 17px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  height: 45px;
+  padding: 0 13px;
+  border: 1px solid #dce2ed;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #315bea;
+  box-shadow: 0 0 0 3px rgba(49,91,234,0.1);
+}
+
+.form-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 18px 0 22px;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #667085;
+}
+
+.register-btn {
+  width: 100%;
+  height: 47px;
+  background: #315bea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background: #2446c5;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 13px;
+  color: #8490a5;
+}
+
+.login-link a {
+  color: #315bea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #a0a8b8;
+  font-size: 11px;
+}
+
+@media (max-width: 480px) {
+  .registration-card {
+    padding: 25px 20px;
+  }
+}
+.role-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #dce2ed;
+  border-radius: 8px;
+  background: #fafbff;
+}
+
+.role-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #344054;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.role-option input {
+  width: 16px;
+  height: 16px;
+  accent-color: #315bea;
+}

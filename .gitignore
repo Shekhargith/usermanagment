@@ -1,0 +1,25 @@
+# Angular
+**/node_modules/
+**/dist/
+**/.angular/
+**/coverage/
+
+# Spring Boot
+**/target/
+**/build/
+**/*.class
+
+# IDE
+**/.idea/
+**/.settings/
+**/.classpath
+**/.project
+
+# Secrets
+**/.env
+**/.env.*
+**/application-local.properties
+**/application-prod.properties
+
+# Logs
+**/*.log

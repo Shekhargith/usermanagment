@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e8efff, #f5f7ff);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.brand-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background: #315bea;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.brand h2 {
+  color: #202b45;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.brand p {
+  color: #8490a5;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.form-group input {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #dce2ed;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #315bea;
+  box-shadow: 0 0 0 3px rgba(49, 91, 234, 0.1);
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-right: 65px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #315bea;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #667085;
+}
+
+.form-options a,
+.register-link a {
+  color: #315bea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-btn {
+  width: 100%;
+  height: 48px;
+  background: #315bea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #2446c5;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 25px;
+  color: #8490a5;
+  font-size: 13px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 35px;
+  color: #a0a8b8;
+  font-size: 11px;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 28px 22px;
+  }
+}
